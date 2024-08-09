@@ -2,19 +2,23 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Carlos Mertens | Software Engineer" },
+    {
+      name: "description",
+      content:
+        "I'm dedicated to harnessing the power of JavaScript to build innovative and impactful digital solutions.",
+    },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
+    <div className="p-4">
+      <h1 className="text-3xl text-white">Welcome to Remix</h1>
       <ul className="list-disc mt-4 pl-6 space-y-2">
         <li>
           <a
-            className="text-blue-700 underline visited:text-purple-900"
+            className="text-accent underline visited:text-purple-900"
             target="_blank"
             href="https://remix.run/start/quickstart"
             rel="noreferrer"
@@ -24,7 +28,7 @@ export default function Index() {
         </li>
         <li>
           <a
-            className="text-blue-700 underline visited:text-purple-900"
+            className="text-light underline visited:text-purple-900"
             target="_blank"
             href="https://remix.run/start/tutorial"
             rel="noreferrer"
@@ -34,7 +38,7 @@ export default function Index() {
         </li>
         <li>
           <a
-            className="text-blue-700 underline visited:text-purple-900"
+            className="text-primary underline visited:text-purple-900"
             target="_blank"
             href="https://remix.run/docs"
             rel="noreferrer"
