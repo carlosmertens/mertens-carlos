@@ -11,10 +11,12 @@ export default {
       secondary: "#489eba",
       white: "#f5f5f5",
     },
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
 } satisfies Config;
 
-//   font-family: 'Lato', sans-serif;
 //   --border-radius: 10px;
