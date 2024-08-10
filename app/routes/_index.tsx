@@ -35,17 +35,20 @@ const text = {
 
 export default function Index() {
   return (
-    <div className='grid gap-16 my-0 mx-auto max-w-7xl'>
+    <div className='grid md:gap-16 my-0 mx-auto max-w-7xl px-4'>
       <Link to='#' className='scroll-up'>
         <i className='fa-solid fa-circle-up'></i>
       </Link>
-      <header className='header'>
-        <div className='header__intro'>
+
+      <header className='h-screen flex flex-col justify-between pt-24 pb-2'>
+        <div className='flex flex-col md:gap-8'>
           <h1
             data-aos='fade-down-right'
-            className='tracking-wider uppercase text-center'>
+            className='tracking-wider uppercase text-center text-5xl drop-shadow-header'>
             {text.h1.name}
-            <span>{text.h1.title}</span>
+            <span className='block text-2xl font-thin italic mt-3 mb-8'>
+              {text.h1.title}
+            </span>
           </h1>
         </div>
 
@@ -123,7 +126,7 @@ export default function Index() {
       <div className='lg-left'>
         <main className='main'>
           <section id='about-section'>
-            <h2 className='tracking-wider uppercase text-center'>
+            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
               {text.section.about.title}
             </h2>
             <div>
@@ -140,10 +143,12 @@ export default function Index() {
           </section>
 
           <section id='skills-section'>
-            <h2 className='tracking-wider uppercase text-center'>Skills</h2>
+            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
+              Skills
+            </h2>
             <div className='section__content'>
               <div className='card'>
-                <h3 className='text-center'>Soft skills</h3>
+                <h3 className='text-center text-secondary'>Soft skills</h3>
                 <ul className='badge__list'>
                   <li className='badge'>Team Work</li>
                   <li className='badge'>problem solving</li>
@@ -154,7 +159,7 @@ export default function Index() {
               </div>
 
               <div className='card'>
-                <h3 className='text-center'>Tech Skills</h3>
+                <h3 className='text-center text-secondary'>Tech Skills</h3>
                 <ul className='badge__list'>
                   <li className='badge'>HTML5</li>
                   <li className='badge'>CSS3</li>
@@ -168,7 +173,7 @@ export default function Index() {
               </div>
 
               <div className='card'>
-                <h3 className='text-center'>Languages</h3>
+                <h3 className='text-center text-secondary'>Languages</h3>
                 <ul className='badge__list'>
                   <li className='badge'>Spanish</li>
                   <li className='badge'>English</li>
@@ -179,7 +184,9 @@ export default function Index() {
           </section>
 
           <section id='experience-section'>
-            <h2 className='tracking-wider uppercase text-center'>Experience</h2>
+            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
+              Experience
+            </h2>
             <div className='section__content'>
               <a
                 href='http://carmasuss.com'
@@ -187,7 +194,9 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='card'>
-                  <h3 className='text-center'>CarMa s&uuml;&#223;</h3>
+                  <h3 className='text-center text-secondary'>
+                    CarMa s&uuml;&#223;
+                  </h3>
                   <p className='card__date'>
                     <time dateTime='2023-06'>June 2023</time> - Current
                   </p>
@@ -221,7 +230,7 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='card'>
-                  <h3 className='text-center'>Dax Parts</h3>
+                  <h3 className='text-center text-secondary'>Dax Parts</h3>
                   <p className='card__date'>
                     <time dateTime='2020-01'>January 2020</time> -
                     <time dateTime='2022-12'>December 2022</time>
@@ -261,7 +270,7 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='card'>
-                  <h3 className='text-center'>Booking.com</h3>
+                  <h3 className='text-center text-secondary'>Booking.com</h3>
                   <p className='card__date'>
                     <time dateTime='2014-05'>May 2014</time> -
                     <time dateTime='2023-04'>April 2023</time>
@@ -291,7 +300,9 @@ export default function Index() {
           </section>
 
           <section id='education-section'>
-            <h2 className='tracking-wider uppercase text-center'>Education</h2>
+            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
+              Education
+            </h2>
             <div className='section__content'>
               <a
                 href='https://digitalcareerinstitute.org/'
@@ -299,7 +310,7 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='card'>
-                  <h3 className='text-center'>DCI</h3>
+                  <h3 className='text-center text-secondary'>DCI</h3>
                   <p className='card__subtitle'>Fullstack web developer</p>
                   <p className='card__date'>
                     <time dateTime='2023-05'>May 2023</time> - Current
@@ -342,7 +353,7 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='card'>
-                  <h3 className='text-center'>Udacity</h3>
+                  <h3 className='text-center text-secondary'>Udacity</h3>
                   <p className='card__subtitle'>
                     Machine Learning engineer nanodegre
                   </p>
@@ -380,7 +391,7 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='card'>
-                  <h3 className='text-center'>Udacity</h3>
+                  <h3 className='text-center text-secondary'>Udacity</h3>
                   <p className='card__subtitle'>
                     AI programming with Python nanodegree
                   </p>
@@ -423,7 +434,9 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='card'>
-                  <h3 className='text-center'>The Open University</h3>
+                  <h3 className='text-center text-secondary'>
+                    The Open University
+                  </h3>
                   <p className='card__subtitle'>
                     Certificate of higher education in computing and IT
                   </p>
@@ -463,7 +476,9 @@ export default function Index() {
           </section>
 
           <section id='projects-section'>
-            <h2 className='tracking-wider uppercase text-center'>Projects</h2>
+            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
+              Projects
+            </h2>
             <div className='section__content'>
               <div className='card' data-aos='flip-left'>
                 <img
@@ -581,7 +596,9 @@ export default function Index() {
           </section>
         </main>
         <footer>
-          <h3>Copyright &copy; 2023 by Carlos Mertens</h3>
+          <h3 className='text-center text-secondary'>
+            Copyright &copy; 2023 by Carlos Mertens
+          </h3>
         </footer>
       </div>
     </div>
