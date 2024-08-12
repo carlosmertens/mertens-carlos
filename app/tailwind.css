@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card__link h3::after {
+  content: '\f08e';
+  font-family: fontawesome;
+  margin-left: 1rem;
+}

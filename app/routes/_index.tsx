@@ -36,7 +36,9 @@ const text = {
 export default function Index() {
   return (
     <div className='grid md:gap-16 my-0 mx-auto max-w-7xl px-4'>
-      <Link to='#' className='scroll-up'>
+      <Link
+        to='#'
+        className='text-6xl fixed bottom-0 right-0 mr-1 mb-1 opacity-50'>
         <i className='fa-solid fa-circle-up'></i>
       </Link>
 
@@ -138,7 +140,9 @@ export default function Index() {
                 />
               </figure>
 
-              <p className='about__paragraph'>{text.section.about.paragraph}</p>
+              <p className='about__paragraph leading-normal'>
+                {text.section.about.paragraph}
+              </p>
             </div>
           </section>
 
@@ -146,38 +150,76 @@ export default function Index() {
             <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
               Skills
             </h2>
-            <div className='section__content'>
-              <div className='card'>
-                <h3 className='text-center text-secondary'>Soft skills</h3>
-                <ul className='badge__list'>
-                  <li className='badge'>Team Work</li>
-                  <li className='badge'>problem solving</li>
-                  <li className='badge'>Customer satisfaction</li>
-                  <li className='badge'>Positive Attitude</li>
-                  <li className='badge'>Motivator</li>
+            <div className='flex flex-col items-center gap-16'>
+              <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
+                <h3 className='text-center text-secondary capitalize'>
+                  Soft skills
+                </h3>
+                <ul className='flex flex-wrap gap-4 justify-center mt-8'>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Team Work
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    problem solving
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Customer satisfaction
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Positive Attitude
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Motivator
+                  </li>
                 </ul>
               </div>
 
-              <div className='card'>
-                <h3 className='text-center text-secondary'>Tech Skills</h3>
-                <ul className='badge__list'>
-                  <li className='badge'>HTML5</li>
-                  <li className='badge'>CSS3</li>
-                  <li className='badge'>JavaScript</li>
-                  <li className='badge'>React js</li>
-                  <li className='badge'>TypeScript</li>
-                  <li className='badge'>Node js</li>
-                  <li className='badge'>Express js</li>
-                  <li className='badge'>Git</li>
+              <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
+                <h3 className='text-center text-secondary capitalize'>
+                  Tech Skills
+                </h3>
+                <ul className='flex flex-wrap gap-4 justify-center mt-8'>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    HTML5
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    CSS3
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    JavaScript
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    React js
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    TypeScript
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Node js
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Express js
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Git
+                  </li>
                 </ul>
               </div>
 
-              <div className='card'>
-                <h3 className='text-center text-secondary'>Languages</h3>
-                <ul className='badge__list'>
-                  <li className='badge'>Spanish</li>
-                  <li className='badge'>English</li>
-                  <li className='badge'>German</li>
+              <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
+                <h3 className='text-center text-secondary capitalize'>
+                  Languages
+                </h3>
+                <ul className='flex flex-wrap gap-4 justify-center mt-8'>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    Spanish
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    English
+                  </li>
+                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                    German
+                  </li>
                 </ul>
               </div>
             </div>
@@ -187,13 +229,13 @@ export default function Index() {
             <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
               Experience
             </h2>
-            <div className='section__content'>
+            <div className='flex flex-col items-center gap-16'>
               <a
                 href='http://carmasuss.com'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='card'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                   <h3 className='text-center text-secondary'>
                     CarMa s&uuml;&#223;
                   </h3>
@@ -217,9 +259,13 @@ export default function Index() {
                       <i className='fa-solid fa-check'></i>Balance the books
                     </li>
                   </ul>
-                  <ul className='badge__list'>
-                    <li className='badge'>react js</li>
-                    <li className='badge'>next js</li>
+                  <ul className='flex flex-wrap gap-4 justify-center mt-8'>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      react js
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      next js
+                    </li>
                   </ul>
                 </div>
               </a>
@@ -229,7 +275,7 @@ export default function Index() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='card'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                   <h3 className='text-center text-secondary'>Dax Parts</h3>
                   <p className='card__date'>
                     <time dateTime='2020-01'>January 2020</time> -
@@ -253,13 +299,25 @@ export default function Index() {
                       <i className='fa-solid fa-check'></i>Assist SEO
                     </li>
                   </ul>
-                  <ul className='badge__list'>
-                    <li className='badge'>react js</li>
-                    <li className='badge'>next js</li>
-                    <li className='badge'>Redux</li>
-                    <li className='badge'>Tailwind css</li>
-                    <li className='badge'>team work</li>
-                    <li className='badge'>problem solving</li>
+                  <ul className='flex flex-wrap gap-4 justify-center mt-8'>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      react js
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      next js
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      Redux
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      Tailwind css
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      team work
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      problem solving
+                    </li>
                   </ul>
                 </div>
               </a>
@@ -269,7 +327,7 @@ export default function Index() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='card'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                   <h3 className='text-center text-secondary'>Booking.com</h3>
                   <p className='card__date'>
                     <time dateTime='2014-05'>May 2014</time> -
@@ -287,12 +345,22 @@ export default function Index() {
                       <i className='fa-solid fa-check'></i>Seasonal Supervisor
                     </li>
                   </ul>
-                  <ul className='badge__list'>
-                    <li className='badge'>team work</li>
-                    <li className='badge'>problem solving</li>
-                    <li className='badge'>Customer satisfaction</li>
-                    <li className='badge'>Positive Attitude</li>
-                    <li className='badge'>Motivator</li>
+                  <ul className='flex flex-wrap gap-4 justify-center mt-8'>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      team work
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      problem solving
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      Customer satisfaction
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      Positive Attitude
+                    </li>
+                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
+                      Motivator
+                    </li>
                   </ul>
                 </div>
               </a>
@@ -303,13 +371,13 @@ export default function Index() {
             <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
               Education
             </h2>
-            <div className='section__content'>
+            <div className='flex flex-col items-center gap-16'>
               <a
                 href='https://digitalcareerinstitute.org/'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='card'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                   <h3 className='text-center text-secondary'>DCI</h3>
                   <p className='card__subtitle'>Fullstack web developer</p>
                   <p className='card__date'>
@@ -352,7 +420,7 @@ export default function Index() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='card'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                   <h3 className='text-center text-secondary'>Udacity</h3>
                   <p className='card__subtitle'>
                     Machine Learning engineer nanodegre
@@ -390,7 +458,7 @@ export default function Index() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='card'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                   <h3 className='text-center text-secondary'>Udacity</h3>
                   <p className='card__subtitle'>
                     AI programming with Python nanodegree
@@ -433,7 +501,7 @@ export default function Index() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='card'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                   <h3 className='text-center text-secondary'>
                     The Open University
                   </h3>
@@ -479,8 +547,10 @@ export default function Index() {
             <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
               Projects
             </h2>
-            <div className='section__content'>
-              <div className='card' data-aos='flip-left'>
+            <div className='flex flex-col items-center gap-16'>
+              <div
+                className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'
+                data-aos='flip-left'>
                 <img
                   src='/img/carma.png'
                   alt='CarMa suss landing page'
@@ -519,7 +589,9 @@ export default function Index() {
                 </p>
               </div>
 
-              <div className='card' data-aos='fade-down-right'>
+              <div
+                className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'
+                data-aos='fade-down-right'>
                 <img
                   src='/img/daxparts.png'
                   alt='Dax Parts landing page'
@@ -555,7 +627,9 @@ export default function Index() {
                 </p>
               </div>
 
-              <div className='card' data-aos='fade-right'>
+              <div
+                className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'
+                data-aos='fade-right'>
                 <img
                   src='/img/diazno.png'
                   alt='Diazno landing page'
@@ -595,7 +669,7 @@ export default function Index() {
             </div>
           </section>
         </main>
-        <footer>
+        <footer className='py-12'>
           <h3 className='text-center text-secondary'>
             Copyright &copy; 2023 by Carlos Mertens
           </h3>

@@ -10,6 +10,7 @@ export default {
       primary: '#243949',
       secondary: '#489eba',
       white: '#f5f5f5',
+      glass: 'rgba(245, 245, 245, 0.103)',
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
