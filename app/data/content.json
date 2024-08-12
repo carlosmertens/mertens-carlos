@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "description": {
+      "title": "Carlos Mertens | Software Engineer",
+      "name": "description",
+      "content": "I'm dedicated to harnessing the power of JavaScript to build innovative and impactful digital solutions."
+    }
+  },
+  "text": {
+    "h1": {
+      "name": "carlos mertens",
+      "title": "software engineer"
+    },
+    "nav": {
+      "link_to_about": "about",
+      "link_to_skills": "skills",
+      "link_to_experience": "experience",
+      "link_to_education": "education",
+      "link_to_projects": "projects"
+    },
+    "section": {
+      "about": {
+        "title": "about",
+        "paragraph": "I'm a passionate JavaScript developer with a strong knack for turning ideas into dynamic web applications. Whether it's crafting intuitive user interfaces or architecting server-side logic, I'm dedicated to harnessing the power of JavaScript to build innovative and impactful digital solutions."
+      }
+    }
+  }
+}

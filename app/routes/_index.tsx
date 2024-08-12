@@ -1,52 +1,25 @@
 import type { MetaFunction } from '@remix-run/node';
 import { Link } from '@remix-run/react';
+import { seo, text } from '../data/content.json';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'Carlos Mertens | Software Engineer' },
+    { title: seo.description.title },
     {
-      name: 'description',
-      content:
-        "I'm dedicated to harnessing the power of JavaScript to build innovative and impactful digital solutions.",
+      name: seo.description.name,
+      content: seo.description.content,
     },
   ];
 };
 
-const text = {
-  h1: {
-    name: 'carlos mertens',
-    title: 'software engineer',
-  },
-  nav: {
-    link_to_about: 'about',
-    link_to_skills: 'skills',
-    link_to_experience: 'experience',
-    link_to_education: 'education',
-    link_to_projects: 'projects',
-  },
-  section: {
-    about: {
-      title: 'about',
-      paragraph:
-        "I'm a passionate JavaScript developer with a strong knack for turning ideas into dynamic web applications. Whether it's crafting intuitive user interfaces or architecting server-side logic, I'm dedicated to harnessing the power of JavaScript to build innovative and impactful digital solutions.",
-    },
-  },
-};
-
 export default function Index() {
   return (
-    <div className='grid md:gap-16 my-0 mx-auto max-w-7xl px-4'>
-      <Link
-        to='#'
-        className='text-6xl fixed bottom-0 right-0 mr-2 mb-2 opacity-50'>
-        <i className='ri-arrow-up-circle-fill ri-xs'></i>
-      </Link>
-
+    <div className='grid my-0 mx-auto max-w-7xl px-4'>
       <header className='h-screen flex flex-col justify-between pt-24 pb-2'>
-        <div className='flex flex-col md:gap-8'>
+        <div className='flex flex-col'>
           <h1
             data-aos='fade-down-right'
-            className='tracking-wider uppercase text-center text-5xl drop-shadow-header'>
+            className='tracking-wider uppercase text-center text-6xl drop-shadow-header'>
             {text.h1.name}
             <span className='block text-2xl font-thin italic mt-3 mb-8'>
               {text.h1.title}
@@ -54,49 +27,49 @@ export default function Index() {
           </h1>
         </div>
 
-        <nav className='header__nav'>
-          <ul>
-            <li className='header__nav_link'>
+        <nav>
+          <ul className='flex flex-col gap-2 text-2xl'>
+            <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
               <Link to='#about-section'>
-                <i className='ri-arrow-right-line'></i>
+                <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_about}
               </Link>
             </li>
-            <li className='header__nav_link'>
+            <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
               <Link to='#skills-section'>
-                <i className='ri-arrow-right-line'></i>
+                <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_skills}
               </Link>
             </li>
-            <li className='header__nav_link'>
+            <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
               <Link to='#experience-section'>
-                <i className='ri-arrow-right-line'></i>
+                <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_experience}
               </Link>
             </li>
-            <li className='header__nav_link'>
+            <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
               <Link to='#education-section'>
-                <i className='ri-arrow-right-line'></i>
+                <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_education}
               </Link>
             </li>
-            <li className='header__nav_link'>
+            <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
               <Link to='#projects-section'>
-                <i className='ri-arrow-right-line'></i>
+                <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_projects}
               </Link>
             </li>
           </ul>
         </nav>
 
-        <ul className='header__contacts'>
+        <ul className='flex justify-around'>
           <li>
             <a
               href='https://github.com/carlosmertens'
               target='_blank'
               rel='noopener noreferrer'
               title='Go to my GitHub profile...'>
-              <i className='ri-github-fill'></i>
+              <i className='ri-github-fill text-4xl transition-all duration-300 ease-out hover:text-secondary hover:scale-125'></i>
             </a>
           </li>
           <li>
@@ -105,26 +78,27 @@ export default function Index() {
               target='_blank'
               rel='noopener noreferrer'
               title='Go to my LindeIn profile...'>
-              <i className='ri-linkedin-box-fill'></i>
+              <i className='ri-linkedin-box-fill text-4xl transition-all duration-300 ease-out hover:text-secondary scale-150'></i>
             </a>
           </li>
           <li>
             <a
               href='mailto:mertenscarlos@yahoo.com'
               title='Send me an email...'>
-              <i className='ri-mail-send-fill'></i>
+              <i className='ri-mail-send-fill text-4xl transition-all duration-300 ease-out hover:text-secondary hover:scale-150'></i>
             </a>
           </li>
           <li>
             <a
-              href='assets/my-CV.pdf'
+              href='/public/cv_mertens_2024.pdf'
               download
               title='Download my CV (Resume)...'>
-              <i className='ri-file-download-fill'></i>
+              <i className='ri-file-download-fill text-4xl transition-all duration-300 ease-out hover:text-secondary scale-150'></i>
             </a>
           </li>
         </ul>
       </header>
+
       <div className='lg-left'>
         <main className='main'>
           <section id='about-section'>
