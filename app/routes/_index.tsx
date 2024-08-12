@@ -132,7 +132,7 @@ export default function Index() {
             <div>
               <figure>
                 <img
-                  src='assets/images/carlos.jpeg'
+                  src='/img/carlos.jpeg'
                   alt='Carlos Mertens profile'
                   className='about__img'
                 />
@@ -482,7 +482,7 @@ export default function Index() {
             <div className='section__content'>
               <div className='card' data-aos='flip-left'>
                 <img
-                  src='assets/images/carma.png'
+                  src='/img/carma.png'
                   alt='CarMa suss landing page'
                   className='card__img'
                 />
@@ -521,7 +521,7 @@ export default function Index() {
 
               <div className='card' data-aos='fade-down-right'>
                 <img
-                  src='assets/images/daxparts.png'
+                  src='/img/daxparts.png'
                   alt='Dax Parts landing page'
                   className='card__img'
                 />
@@ -557,7 +557,7 @@ export default function Index() {
 
               <div className='card' data-aos='fade-right'>
                 <img
-                  src='assets/images/diazno.png'
+                  src='/img/diazno.png'
                   alt='Diazno landing page'
                   className='card__img'
                 />
