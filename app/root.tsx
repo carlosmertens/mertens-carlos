@@ -6,6 +6,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 import './tailwind.css';
+import 'remixicon/fonts/remixicon.css';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

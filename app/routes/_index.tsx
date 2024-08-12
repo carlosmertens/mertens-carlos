@@ -38,8 +38,8 @@ export default function Index() {
     <div className='grid md:gap-16 my-0 mx-auto max-w-7xl px-4'>
       <Link
         to='#'
-        className='text-6xl fixed bottom-0 right-0 mr-1 mb-1 opacity-50'>
-        <i className='fa-solid fa-circle-up'></i>
+        className='text-6xl fixed bottom-0 right-0 mr-2 mb-2 opacity-50'>
+        <i className='ri-arrow-up-circle-fill ri-xs'></i>
       </Link>
 
       <header className='h-screen flex flex-col justify-between pt-24 pb-2'>
@@ -58,31 +58,31 @@ export default function Index() {
           <ul>
             <li className='header__nav_link'>
               <Link to='#about-section'>
-                <i className='fa-solid fa-arrow-right'></i>
+                <i className='ri-arrow-right-line'></i>
                 {text.nav.link_to_about}
               </Link>
             </li>
             <li className='header__nav_link'>
               <Link to='#skills-section'>
-                <i className='fa-solid fa-arrow-right'></i>
+                <i className='ri-arrow-right-line'></i>
                 {text.nav.link_to_skills}
               </Link>
             </li>
             <li className='header__nav_link'>
               <Link to='#experience-section'>
-                <i className='fa-solid fa-arrow-right'></i>
+                <i className='ri-arrow-right-line'></i>
                 {text.nav.link_to_experience}
               </Link>
             </li>
             <li className='header__nav_link'>
               <Link to='#education-section'>
-                <i className='fa-solid fa-arrow-right'></i>
+                <i className='ri-arrow-right-line'></i>
                 {text.nav.link_to_education}
               </Link>
             </li>
             <li className='header__nav_link'>
               <Link to='#projects-section'>
-                <i className='fa-solid fa-arrow-right'></i>
+                <i className='ri-arrow-right-line'></i>
                 {text.nav.link_to_projects}
               </Link>
             </li>
@@ -96,7 +96,7 @@ export default function Index() {
               target='_blank'
               rel='noopener noreferrer'
               title='Go to my GitHub profile...'>
-              <i className='fa-brands fa-github'></i>
+              <i className='ri-github-fill'></i>
             </a>
           </li>
           <li>
@@ -105,14 +105,14 @@ export default function Index() {
               target='_blank'
               rel='noopener noreferrer'
               title='Go to my LindeIn profile...'>
-              <i className='fa-brands fa-linkedin'></i>
+              <i className='ri-linkedin-box-fill'></i>
             </a>
           </li>
           <li>
             <a
               href='mailto:mertenscarlos@yahoo.com'
               title='Send me an email...'>
-              <i className='fa-solid fa-envelope'></i>
+              <i className='ri-mail-send-fill'></i>
             </a>
           </li>
           <li>
@@ -120,7 +120,7 @@ export default function Index() {
               href='assets/my-CV.pdf'
               download
               title='Download my CV (Resume)...'>
-              <i className='fa-solid fa-file-pdf'></i>
+              <i className='ri-file-download-fill'></i>
             </a>
           </li>
         </ul>
@@ -236,27 +236,30 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                  <h3 className='text-center text-secondary'>
-                    CarMa s&uuml;&#223;
+                  <h3 className='flex justify-center text-secondary'>
+                    <span>CarMa s&uuml;&#223;</span>
+                    <span>
+                      <i className='ri-external-link-fill'></i>
+                    </span>
                   </h3>
                   <p className='card__date'>
                     <time dateTime='2023-06'>June 2023</time> - Current
                   </p>
                   <ul className='card__list'>
                     <li>
-                      <i className='fa-solid fa-check'></i>Co-founder
+                      <i className='ri-check-fill'></i>Co-founder
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Develop website
+                      <i className='ri-check-fill'></i>Develop website
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Maintain website
+                      <i className='ri-check-fill'></i>Maintain website
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Create content
+                      <i className='ri-check-fill'></i>Create content
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Balance the books
+                      <i className='ri-check-fill'></i>Balance the books
                     </li>
                   </ul>
                   <ul className='flex flex-wrap gap-4 justify-center mt-8'>
@@ -276,27 +279,31 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                  <h3 className='text-center text-secondary'>Dax Parts</h3>
+                  <h3 className='flex justify-center text-secondary'>
+                    <span>Dax Parts</span>
+                    <span>
+                      <i className='ri-external-link-fill'></i>
+                    </span>
+                  </h3>
                   <p className='card__date'>
                     <time dateTime='2020-01'>January 2020</time> -
                     <time dateTime='2022-12'>December 2022</time>
                   </p>
                   <ul className='card__list'>
                     <li>
-                      <i className='fa-solid fa-check'></i>Project developer
+                      <i className='ri-check-fill'></i>Project developer
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Develop responsive
-                      design
+                      <i className='ri-check-fill'></i>Develop responsive design
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Coordinate deployment
+                      <i className='ri-check-fill'></i>Coordinate deployment
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Assist server
+                      <i className='ri-check-fill'></i>Assist server
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Assist SEO
+                      <i className='ri-check-fill'></i>Assist SEO
                     </li>
                   </ul>
                   <ul className='flex flex-wrap gap-4 justify-center mt-8'>
@@ -328,21 +335,25 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                  <h3 className='text-center text-secondary'>Booking.com</h3>
+                  <h3 className='flex justify-center text-secondary'>
+                    <span>Booking.com</span>
+                    <span>
+                      <i className='ri-external-link-fill'></i>
+                    </span>
+                  </h3>
                   <p className='card__date'>
                     <time dateTime='2014-05'>May 2014</time> -
                     <time dateTime='2023-04'>April 2023</time>
                   </p>
                   <ul className='card__list'>
                     <li>
-                      <i className='fa-solid fa-check'></i>Handle customer
-                      issues
+                      <i className='ri-check-fill'></i>Handle customer issues
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Monitor performance
+                      <i className='ri-check-fill'></i>Monitor performance
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Seasonal Supervisor
+                      <i className='ri-check-fill'></i>Seasonal Supervisor
                     </li>
                   </ul>
                   <ul className='flex flex-wrap gap-4 justify-center mt-8'>
@@ -378,32 +389,37 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                  <h3 className='text-center text-secondary'>DCI</h3>
+                  <h3 className='flex justify-center text-secondary'>
+                    <span>DCI</span>
+                    <span>
+                      <i className='ri-external-link-fill'></i>
+                    </span>
+                  </h3>
                   <p className='card__subtitle'>Fullstack web developer</p>
                   <p className='card__date'>
                     <time dateTime='2023-05'>May 2023</time> - Current
                   </p>
                   <ul className='card__list'>
                     <li>
-                      <i className='fa-solid fa-check'></i>Semantic HTML
+                      <i className='ri-check-fill'></i>Semantic HTML
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Advance CSS
+                      <i className='ri-check-fill'></i>Advance CSS
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Master javascript
+                      <i className='ri-check-fill'></i>Master javascript
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>react js
+                      <i className='ri-check-fill'></i>react js
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Node js
+                      <i className='ri-check-fill'></i>Node js
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Express js
+                      <i className='ri-check-fill'></i>Express js
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Mongo DB
+                      <i className='ri-check-fill'></i>Mongo DB
                     </li>
                   </ul>
                   <div className='divider'></div>
@@ -421,7 +437,12 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                  <h3 className='text-center text-secondary'>Udacity</h3>
+                  <h3 className='flex justify-center text-secondary'>
+                    <span>Udacity</span>
+                    <span>
+                      <i className='ri-external-link-fill'></i>
+                    </span>
+                  </h3>
                   <p className='card__subtitle'>
                     Machine Learning engineer nanodegre
                   </p>
@@ -431,17 +452,16 @@ export default function Index() {
                   </p>
                   <ul className='card__list'>
                     <li>
-                      <i className='fa-solid fa-check'></i>Supervided
+                      <i className='ri-check-fill'></i>Supervided
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Unsupervised
+                      <i className='ri-check-fill'></i>Unsupervised
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Reinforcement
+                      <i className='ri-check-fill'></i>Reinforcement
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Deep learning
-                      algorithms
+                      <i className='ri-check-fill'></i>Deep learning algorithms
                     </li>
                   </ul>
                   <div className='divider'></div>
@@ -459,7 +479,12 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                  <h3 className='text-center text-secondary'>Udacity</h3>
+                  <h3 className='flex justify-center text-secondary'>
+                    <span>Udacity</span>
+                    <span>
+                      <i className='ri-external-link-fill'></i>
+                    </span>
+                  </h3>
                   <p className='card__subtitle'>
                     AI programming with Python nanodegree
                   </p>
@@ -470,22 +495,22 @@ export default function Index() {
                   <div className='divider'></div>
                   <ul className='card__list'>
                     <li>
-                      <i className='fa-solid fa-check'></i>Python programming
+                      <i className='ri-check-fill'></i>Python programming
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>NumPy
+                      <i className='ri-check-fill'></i>NumPy
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Pandas
+                      <i className='ri-check-fill'></i>Pandas
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Anaconda
+                      <i className='ri-check-fill'></i>Anaconda
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Matplotlib
+                      <i className='ri-check-fill'></i>Matplotlib
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Neural Networks
+                      <i className='ri-check-fill'></i>Neural Networks
                     </li>
                   </ul>
                   <p className='card__description'>
@@ -502,8 +527,11 @@ export default function Index() {
                 rel='noopener noreferrer'
                 className='card__link'>
                 <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                  <h3 className='text-center text-secondary'>
-                    The Open University
+                  <h3 className='flex justify-center text-secondary'>
+                    <span>The Open University</span>
+                    <span>
+                      <i className='ri-external-link-fill'></i>
+                    </span>
                   </h3>
                   <p className='card__subtitle'>
                     Certificate of higher education in computing and IT
@@ -514,23 +542,22 @@ export default function Index() {
                   </p>
                   <ul className='card__list'>
                     <li>
-                      <i className='fa-solid fa-check'></i>Computer hardware
+                      <i className='ri-check-fill'></i>Computer hardware
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Computer architecture
+                      <i className='ri-check-fill'></i>Computer architecture
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Basic microsoft
-                      network
+                      <i className='ri-check-fill'></i>Basic microsoft network
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Basic robotics
+                      <i className='ri-check-fill'></i>Basic robotics
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Programing principles
+                      <i className='ri-check-fill'></i>Programing principles
                     </li>
                     <li>
-                      <i className='fa-solid fa-check'></i>Advance mathematics
+                      <i className='ri-check-fill'></i>Advance mathematics
                     </li>
                   </ul>
                   <p className='card__description'>
@@ -564,7 +591,7 @@ export default function Index() {
                       target='_blank'
                       rel='noopener noreferrer'>
                       Source code
-                      <i className='fa-solid fa-arrow-up-right-from-square'></i>
+                      <i className='ri-external-link-fill'></i>
                     </a>
                   </li>
                   <li>
@@ -573,7 +600,7 @@ export default function Index() {
                       target='_blank'
                       rel='noopener noreferrer'>
                       Website
-                      <i className='fa-solid fa-arrow-up-right-from-square'></i>
+                      <i className='ri-external-link-fill'></i>
                     </a>
                   </li>
                 </ul>
@@ -605,7 +632,8 @@ export default function Index() {
                       target='_blank'
                       rel='noopener noreferrer'
                       className='isDisabled'>
-                      Source code<i className='fa-solid fa-lock'></i>
+                      Source code
+                      <i className='ri-git-repository-private-fill'></i>
                     </a>
                   </li>
                   <li>
@@ -614,7 +642,7 @@ export default function Index() {
                       target='_blank'
                       rel='noopener noreferrer'>
                       Website
-                      <i className='fa-solid fa-arrow-up-right-from-square'></i>
+                      <i className='ri-external-link-fill'></i>
                     </a>
                   </li>
                 </ul>
@@ -643,7 +671,7 @@ export default function Index() {
                       target='_blank'
                       rel='noopener noreferrer'>
                       Source code
-                      <i className='fa-solid fa-arrow-up-right-from-square'></i>
+                      <i className='ri-external-link-fill'></i>
                     </a>
                   </li>
                   <li>
@@ -652,7 +680,7 @@ export default function Index() {
                       target='_blank'
                       rel='noopener noreferrer'>
                       Website
-                      <i className='fa-solid fa-arrow-up-right-from-square'></i>
+                      <i className='ri-external-link-fill'></i>
                     </a>
                   </li>
                 </ul>
@@ -671,7 +699,7 @@ export default function Index() {
         </main>
         <footer className='py-12'>
           <h3 className='text-center text-secondary'>
-            Copyright &copy; 2023 by Carlos Mertens
+            Copyright &copy; {new Date().getFullYear()} by Carlos Mertens
           </h3>
         </footer>
       </div>
