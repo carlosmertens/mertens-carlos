@@ -1,6 +1,7 @@
 import type { MetaFunction } from '@remix-run/node';
 import { Link } from '@remix-run/react';
 import { seo, text } from '../data/content.json';
+import { Badge } from '~/components/Badge';
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,7 +15,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className='grid my-0 mx-auto max-w-7xl px-4'>
+    <div className='grid my-0 mx-auto max-w-7xl px-8'>
       <header className='h-screen flex flex-col justify-between pt-24 pb-2'>
         <div className='flex flex-col'>
           <h1
@@ -110,11 +111,11 @@ export default function Index() {
                 <img
                   src='/img/carlos.jpeg'
                   alt='Carlos Mertens profile'
-                  className='about__img'
+                  className='rounded-full float-left h-36 mr-4'
                 />
               </figure>
 
-              <p className='about__paragraph leading-normal'>
+              <p className='text-center leading-normal'>
                 {text.section.about.paragraph}
               </p>
             </div>
@@ -130,20 +131,20 @@ export default function Index() {
                   Soft skills
                 </h3>
                 <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Team Work
+                  <li>
+                    <Badge text='team work' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    problem solving
+                  <li>
+                    <Badge text='problem solving' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Customer satisfaction
+                  <li>
+                    <Badge text='customer satisfaction' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Positive Attitude
+                  <li>
+                    <Badge text='positive attitude' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Motivator
+                  <li>
+                    <Badge text='motivator' />
                   </li>
                 </ul>
               </div>
@@ -153,29 +154,29 @@ export default function Index() {
                   Tech Skills
                 </h3>
                 <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    HTML5
+                  <li>
+                    <Badge text='HTML5' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    CSS3
+                  <li>
+                    <Badge text='CSS3' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    JavaScript
+                  <li>
+                    <Badge text='javascript' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    React js
+                  <li>
+                    <Badge text='react js' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    TypeScript
+                  <li>
+                    <Badge text='typescript' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Node js
+                  <li>
+                    <Badge text='node js' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Express js
+                  <li>
+                    <Badge text='express js' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Git
+                  <li>
+                    <Badge text='git' />
                   </li>
                 </ul>
               </div>
@@ -185,14 +186,14 @@ export default function Index() {
                   Languages
                 </h3>
                 <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    Spanish
+                  <li>
+                    <Badge text='spanish' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    English
+                  <li>
+                    <Badge text='english' />
                   </li>
-                  <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                    German
+                  <li>
+                    <Badge text='german' />
                   </li>
                 </ul>
               </div>
@@ -237,11 +238,11 @@ export default function Index() {
                     </li>
                   </ul>
                   <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      react js
+                    <li>
+                      <Badge text='reactjs' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      next js
+                    <li>
+                      <Badge text='next js' />
                     </li>
                   </ul>
                 </div>
@@ -281,23 +282,23 @@ export default function Index() {
                     </li>
                   </ul>
                   <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      react js
+                    <li>
+                      <Badge text='react js' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      next js
+                    <li>
+                      <Badge text='next js' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      Redux
+                    <li>
+                      <Badge text='redux' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      Tailwind css
+                    <li>
+                      <Badge text='tailwindcss' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      team work
+                    <li>
+                      <Badge text='team work' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      problem solving
+                    <li>
+                      <Badge text='problem solving' />
                     </li>
                   </ul>
                 </div>
@@ -331,20 +332,20 @@ export default function Index() {
                     </li>
                   </ul>
                   <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      team work
+                    <li>
+                      <Badge text='team work' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      problem solving
+                    <li>
+                      <Badge text='problem solving' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      Customer satisfaction
+                    <li>
+                      <Badge text='customer satisfaction' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      Positive Attitude
+                    <li>
+                      <Badge text='positive attitude' />
                     </li>
-                    <li className='bg-light rounded-xl text-dark font-bold text-xs py-2 px-2 uppercase whitespace-nowrap'>
-                      Motivator
+                    <li>
+                      <Badge text='motivator' />
                     </li>
                   </ul>
                 </div>

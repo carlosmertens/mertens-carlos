@@ -4,6 +4,8 @@
 
 ## Development
 
+[RemixIcon](https://github.com/Remix-Design/RemixIcon)
+
 Run the dev server:
 
 ```shellscript
