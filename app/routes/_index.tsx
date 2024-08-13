@@ -2,6 +2,7 @@ import type { MetaFunction } from '@remix-run/node';
 import { Link } from '@remix-run/react';
 import { seo, text } from '../data/content.json';
 import { Badge } from '~/components/Badge';
+import { Section } from '~/layouts/Section';
 
 export const meta: MetaFunction = () => {
   return [
@@ -101,12 +102,9 @@ export default function Index() {
       </header>
 
       <div className='lg-left'>
-        <main className='main'>
-          <section id='about-section'>
-            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
-              {text.section.about.title}
-            </h2>
-            <div>
+        <main className='my-8 grid gap-y-12'>
+          <Section id='about' title={text.section.about.title}>
+            <div className=''>
               <figure>
                 <img
                   src='/img/carlos.jpeg'
@@ -119,13 +117,10 @@ export default function Index() {
                 {text.section.about.paragraph}
               </p>
             </div>
-          </section>
+          </Section>
 
-          <section id='skills-section'>
-            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
-              Skills
-            </h2>
-            <div className='flex flex-col items-center gap-16'>
+          <Section id='skills' title='skills'>
+            <div className='flex flex-col items-center gap-8'>
               <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
                 <h3 className='text-center text-secondary capitalize'>
                   Soft skills
@@ -198,19 +193,16 @@ export default function Index() {
                 </ul>
               </div>
             </div>
-          </section>
+          </Section>
 
-          <section id='experience-section'>
-            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
-              Experience
-            </h2>
-            <div className='flex flex-col items-center gap-16'>
+          <Section id='experience' title='experience'>
+            <div className='flex flex-col items-center gap-8'>
               <a
                 href='http://carmasuss.com'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 min-w-72 transition-all duration-300 ease-out'>
                   <h3 className='flex justify-center text-secondary'>
                     <span>CarMa s&uuml;&#223;</span>
                     <span>
@@ -351,13 +343,10 @@ export default function Index() {
                 </div>
               </a>
             </div>
-          </section>
+          </Section>
 
-          <section id='education-section'>
-            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
-              Education
-            </h2>
-            <div className='flex flex-col items-center gap-16'>
+          <Section id='education' title='education'>
+            <div className='flex flex-col items-center gap-8'>
               <a
                 href='https://digitalcareerinstitute.org/'
                 target='_blank'
@@ -543,12 +532,9 @@ export default function Index() {
                 </div>
               </a>
             </div>
-          </section>
+          </Section>
 
-          <section id='projects-section'>
-            <h2 className='tracking-wider uppercase text-center drop-shadow-header'>
-              Projects
-            </h2>
+          <Section id='projects' title='projects'>
             <div className='flex flex-col items-center gap-16'>
               <div
                 className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'
@@ -670,7 +656,7 @@ export default function Index() {
                 </p>
               </div>
             </div>
-          </section>
+          </Section>
         </main>
         <footer className='py-12'>
           <h3 className='text-center text-secondary'>
