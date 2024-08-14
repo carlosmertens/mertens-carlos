@@ -1,8 +1,8 @@
-type Props = {
+interface Props {
   id: string;
   title: string;
   children: React.ReactNode;
-};
+}
 
 export function Section({ id, title, children }: Props) {
   return (

@@ -24,5 +24,31 @@
         "paragraph": "I'm a passionate JavaScript developer with a strong knack for turning ideas into dynamic web applications. Whether it's crafting intuitive user interfaces or architecting server-side logic, I'm dedicated to harnessing the power of JavaScript to build innovative and impactful digital solutions."
       }
     }
-  }
+  },
+  "skills": [
+    {
+      "name": "soft skills",
+      "list": [
+        "team work",
+        "problem solving",
+        "customer satisfaction",
+        "positive attitude",
+        "motivator"
+      ]
+    },
+    {
+      "name": "tech skills",
+      "list": [
+        "HTML5",
+        "CSS3",
+        "javascript",
+        "typescript",
+        "react js",
+        "node js",
+        "express js",
+        "git"
+      ]
+    },
+    { "name": "languages", "list": ["spanish", "english", "german"] }
+  ]
 }

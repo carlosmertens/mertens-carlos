@@ -1,8 +1,9 @@
 import type { MetaFunction } from '@remix-run/node';
-import { Link } from '@remix-run/react';
-import { seo, text } from '../data/content.json';
+import { NavLink } from '@remix-run/react';
+import { seo, text, skills } from '../data/content.json';
 import { Badge } from '~/components/Badge';
 import { Section } from '~/layouts/Section';
+import { Card } from '~/layouts/Card';
 
 export const meta: MetaFunction = () => {
   return [
@@ -32,34 +33,34 @@ export default function Index() {
         <nav>
           <ul className='flex flex-col gap-2 text-2xl'>
             <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
-              <Link to='#about-section'>
+              <NavLink to='#about'>
                 <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_about}
-              </Link>
+              </NavLink>
             </li>
             <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
-              <Link to='#skills-section'>
+              <NavLink to='#skills'>
                 <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_skills}
-              </Link>
+              </NavLink>
             </li>
             <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
-              <Link to='#experience-section'>
+              <NavLink to='#experience'>
                 <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_experience}
-              </Link>
+              </NavLink>
             </li>
             <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
-              <Link to='#education-section'>
+              <NavLink to='#education'>
                 <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_education}
-              </Link>
+              </NavLink>
             </li>
             <li className='uppercase transition-all duration-300 ease-out hover:text-secondary hover:translate-x-4'>
-              <Link to='#projects-section'>
+              <NavLink to='#projects'>
                 <i className='ri-arrow-right-line mr-2'></i>
                 {text.nav.link_to_projects}
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -121,77 +122,17 @@ export default function Index() {
 
           <Section id='skills' title='skills'>
             <div className='flex flex-col items-center gap-8'>
-              <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                <h3 className='text-center text-secondary capitalize'>
-                  Soft skills
-                </h3>
-                <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                  <li>
-                    <Badge text='team work' />
-                  </li>
-                  <li>
-                    <Badge text='problem solving' />
-                  </li>
-                  <li>
-                    <Badge text='customer satisfaction' />
-                  </li>
-                  <li>
-                    <Badge text='positive attitude' />
-                  </li>
-                  <li>
-                    <Badge text='motivator' />
-                  </li>
-                </ul>
-              </div>
-
-              <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                <h3 className='text-center text-secondary capitalize'>
-                  Tech Skills
-                </h3>
-                <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                  <li>
-                    <Badge text='HTML5' />
-                  </li>
-                  <li>
-                    <Badge text='CSS3' />
-                  </li>
-                  <li>
-                    <Badge text='javascript' />
-                  </li>
-                  <li>
-                    <Badge text='react js' />
-                  </li>
-                  <li>
-                    <Badge text='typescript' />
-                  </li>
-                  <li>
-                    <Badge text='node js' />
-                  </li>
-                  <li>
-                    <Badge text='express js' />
-                  </li>
-                  <li>
-                    <Badge text='git' />
-                  </li>
-                </ul>
-              </div>
-
-              <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
-                <h3 className='text-center text-secondary capitalize'>
-                  Languages
-                </h3>
-                <ul className='flex flex-wrap gap-4 justify-center mt-8'>
-                  <li>
-                    <Badge text='spanish' />
-                  </li>
-                  <li>
-                    <Badge text='english' />
-                  </li>
-                  <li>
-                    <Badge text='german' />
-                  </li>
-                </ul>
-              </div>
+              {skills.map((skill, i) => (
+                <Card title={skill.name} key={i}>
+                  <ul className='flex flex-wrap gap-4 justify-center mt-8'>
+                    {skill.list.map((item, i) => (
+                      <li key={i}>
+                        <Badge text={item} />
+                      </li>
+                    ))}
+                  </ul>
+                </Card>
+              ))}
             </div>
           </Section>
 
@@ -245,7 +186,7 @@ export default function Index() {
                 target='_blank'
                 rel='noopener noreferrer'
                 className='card__link'>
-                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 transition-all duration-300 ease-out'>
+                <div className='bg-glass shadow-2xl rounded-xl p-6 max-w-96 min-w-72 transition-all duration-300 ease-out'>
                   <h3 className='flex justify-center text-secondary'>
                     <span>Dax Parts</span>
                     <span>
