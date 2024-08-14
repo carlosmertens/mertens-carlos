@@ -10,7 +10,7 @@ export function Section({ id, title, children }: Props) {
       <h2 className='tracking-wider uppercase text-2xl mb-4 text-center drop-shadow-header'>
         {title}
       </h2>
-      {children}
+      <div className='flex flex-col items-center gap-y-8'>{children}</div>
     </section>
   );
 }

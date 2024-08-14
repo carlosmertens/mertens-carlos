@@ -28,7 +28,7 @@
   "skills": [
     {
       "name": "soft skills",
-      "list": [
+      "tags": [
         "team work",
         "problem solving",
         "customer satisfaction",
@@ -38,7 +38,7 @@
     },
     {
       "name": "tech skills",
-      "list": [
+      "tags": [
         "HTML5",
         "CSS3",
         "javascript",
@@ -49,6 +49,170 @@
         "git"
       ]
     },
-    { "name": "languages", "list": ["spanish", "english", "german"] }
+    { "name": "languages", "tags": ["spanish", "english", "german"] }
+  ],
+  "experience": [
+    {
+      "url": "http://carmasuss.com",
+      "name": "CarMa süß",
+      "dateStart": "june 2023",
+      "dateEnd": "current",
+      "tasks": [
+        "Co-founder",
+        "Develop website",
+        "mantain website",
+        "create content",
+        "balance books"
+      ],
+      "tags": ["react js", "next js"]
+    },
+    {
+      "url": "https://daxparts.com",
+      "name": "Dax Parts",
+      "dateStart": "January 2020",
+      "dateEnd": "May 2023",
+      "tasks": [
+        "Project developer",
+        "responsive design",
+        "coordinate deployment",
+        "assist server",
+        "assist SEO"
+      ],
+      "tags": [
+        "react js",
+        "next js",
+        "Redux",
+        "tailwindcss",
+        "team work",
+        "problem solving"
+      ]
+    },
+    {
+      "url": "https://booking.com",
+      "name": "Booking.com",
+      "dateStart": "may 2014",
+      "dateEnd": "april 2023",
+      "tasks": [
+        "handle customer issues",
+        "monitor performance",
+        "seasonal supervisor"
+      ],
+      "tags": [
+        "team work",
+        "problem solving",
+        "customer satisfaction",
+        "positive attitude",
+        "motivator",
+        "Tableau",
+        "Jira ticket"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "url": "https://digitalcareerinstitute.org/",
+      "name": "DCI",
+      "dateStart": "may 2023",
+      "dateEnd": "july 2024",
+      "description": "We believe: You are constantly learning in life and it’s never too late to start over – regardless of your experience, background or age.",
+      "title": "Full Stack Web Developer",
+      "tags": [
+        "Semantic HTML",
+        "Advance CSS",
+        "master javascript",
+        "react js",
+        "node js",
+        "express js",
+        "mongo db"
+      ]
+    },
+    {
+      "url": "https://www.udacity.com/",
+      "name": "Udacity",
+      "dateStart": "2018",
+      "dateEnd": "2019",
+      "description": "Master real, in-demand tech skills from home with Udacity’s 100% online learning platform. Stay ahead of the curve and get the skills you’ll need for the jobs of the future.",
+      "title": "Machine Learning engineer nanodegre",
+      "tags": [
+        "Supervised",
+        "unsupervised",
+        "reinforcement",
+        "deep learning",
+        "monte carlo"
+      ]
+    },
+    {
+      "url": "https://www.udacity.com/",
+      "name": "Udacity",
+      "dateStart": "2018",
+      "dateEnd": "2019",
+      "description": "Master real, in-demand tech skills from home with Udacity’s 100% online learning platform. Stay ahead of the curve and get the skills you’ll need for the jobs of the future.",
+      "title": "AI programming with Python nanodegre",
+      "tags": [
+        "Python programming",
+        "numpy",
+        "pandas",
+        "anaconda",
+        "mapplotlib",
+        "neural networks"
+      ]
+    },
+    {
+      "url": "https://www.open.ac.uk",
+      "name": "The Open University",
+      "dateStart": "2016",
+      "dateEnd": "2017",
+      "description": "Master real, in-demand tech skills from home with Udacity’s 100% online learning platform. Stay ahead of the curve and get the skills you’ll need for the jobs of the future.",
+      "title": "Certificate of higher education in computing and IT",
+      "tags": [
+        "computer hardware",
+        "computer architecture",
+        "basic microsoft network",
+        "basic robotics",
+        "programming principles",
+        "advance mathematics"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "imgPath": "/img/carma.png",
+      "imgAlt": "CarMa suss landing page",
+      "links": [
+        {
+          "name": "Source code",
+          "url": "https://github.com/carlosmertens/carma"
+        },
+        { "name": "Website", "url": "https://www.carmasuss.com" }
+      ],
+      "description": "Indulge your taste buds with a delightful South American treat in the heart of Berlin! Our freshly baked alfajores are an exquisite blend of soft, buttery cookies sandwiched together with a luscious dulce de leche filling. These melt-in-your-mouth delights are crafted with the finest ingredients - they will transport you straight to the sunny flavors of South America!"
+    },
+    {
+      "imgPath": "/img/daxparts.png",
+      "imgAlt": "Dax Parts landing page",
+      "links": [
+        {
+          "name": "Source code",
+          "url": "https://github.com/carlosmertens"
+        },
+        { "name": "Website", "url": "https://daxparts.com" }
+      ],
+      "description": "We are a company dedicated in facilitating the purchase of spare parts for all types of machinery to our customers in developing countries. With humble beginnings in Bolivia today our services reach divers countries and industries."
+    },
+    {
+      "imgPath": "/img/diazno.png",
+      "imgAlt": "Diazno landing page",
+      "links": [
+        {
+          "name": "Source code",
+          "url": "https://github.com/carlosmertens/Diazno2"
+        },
+        {
+          "name": "Website",
+          "url": "https://diazno2-carlosmertens.vercel.app/"
+        }
+      ],
+      "description": "DIAZNO, the Berlin based singer-songwriter and producer, is carving a niche for himself with an audacious sound blending everything from pop to folk, soul, rock and reggae. Born and raised in Lagos, Nigeria, the multi-instrumentalist grew up playing in church and studying classNameical music but since moving to Berlin in 2016 has redefined his music."
+    }
   ]
 }
