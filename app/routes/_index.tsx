@@ -17,8 +17,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className='grid my-0 mx-auto max-w-7xl px-8'>
-      <header className='h-svh flex flex-col justify-between pt-24 pb-2'>
+    <div className='grid md:grid-cols-2 md:gap-x-8 my-0 mx-auto max-w-7xl px-8'>
+      <header className='h-svh flex flex-col justify-between pt-24 pb-2 md:pb-6 md:sticky md:top-0'>
         <div className='flex flex-col'>
           <h1
             data-aos='fade-down-right'
@@ -102,7 +102,7 @@ export default function Index() {
         </ul>
       </header>
 
-      <div className='lg-left'>
+      <div className='md:mt-4'>
         <main className='my-8 grid gap-y-12'>
           <Section id='about' title={data.text.section.about.title}>
             <article>
@@ -177,7 +177,7 @@ export default function Index() {
                     <time>{item.dateStart}</time> - <time>{item.dateEnd}</time>
                   </p>
                   <p className='text-sm'>{item.description}</p>
-                  <h4 className='text-center text-lg text-dark capitalize mt-6'>
+                  <h4 className='text-center text-lg text-secondary md:text-primary capitalize mt-6'>
                     {item.title}
                   </h4>
 
@@ -223,8 +223,8 @@ export default function Index() {
             ))}
           </Section>
         </main>
-        <footer className='py-12'>
-          <h3 className='text-center text-secondary'>
+        <footer className='py-12 md:py-6'>
+          <h3 className='text-center text-secondary md:text-dark'>
             Copyright &copy; {new Date().getFullYear()} by Carlos Mertens
           </h3>
         </footer>

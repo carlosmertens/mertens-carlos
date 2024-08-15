@@ -6,9 +6,9 @@ interface Props {
 
 export function Card({ title, children, isLink = false }: Props) {
   return (
-    <div className='bg-glass shadow-2xl rounded-xl pt-4 pb-6 px-4 max-w-96 min-w-72 transition-all duration-300 ease-out'>
+    <div className='bg-glass shadow-2xl rounded-xl pt-5 pb-8 px-4 max-w-96 min-w-72 md:w-80 lg:w-96 transition-all duration-300 ease-out'>
       {title && (
-        <h3 className='text-center text-lg text-secondary font-bold tracking-wider capitalize'>
+        <h3 className='text-center text-lg md:text-xl text-secondary md:text-primary font-bold tracking-wider capitalize'>
           {title}
           {isLink && (
             <span>
