@@ -23,5 +23,3 @@ export default {
   },
   plugins: [],
 } satisfies Config;
-
-//   --border-radius: 10px;
